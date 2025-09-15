@@ -18,12 +18,12 @@ export default function GradientMenu() {
 						style={{ ["--gradient-from" as any]: gradientFrom, ["--gradient-to" as any]: gradientTo }}
 						className="relative w-[56px] h-[56px] bg-white/5 backdrop-blur rounded-full flex items-center justify-center transition-all duration-500 hover:w-[180px] group cursor-pointer border border-white/10"
 					>
-						<a href={href} className="absolute inset-0 rounded-full outline-none focus:ring-2 focus:ring-primary/60">
+						<a href={href} target={href?.startsWith('http') ? "_blank" : undefined} rel={href?.startsWith('http') ? "noopener noreferrer" : undefined} className="absolute inset-0 rounded-full outline-none focus:ring-2 focus:ring-primary/60 z-20">
 							<span className="sr-only">{title}</span>
 						</a>
-						<span className="absolute inset-0 rounded-full bg-[linear-gradient(45deg,var(--gradient-from),var(--gradient-to))] opacity-0 transition-all duration-500 group-hover:opacity-100"></span>
-						<span className="absolute top-[10px] inset-x-0 h-full rounded-full bg-[linear-gradient(45deg,var(--gradient-from),var(--gradient-to))] blur-[15px] opacity-0 -z-10 transition-all duration-500 group-hover:opacity-50"></span>
-						<span className="relative z-10 transition-all duration-500 group-hover:scale-0">
+						<span className="absolute inset-0 rounded-full bg-[linear-gradient(45deg,var(--gradient-from),var(--gradient-to))] opacity-0 transition-all duration-500 group-hover:opacity-100 pointer-events-none"></span>
+						<span className="absolute top-[10px] inset-x-0 h-full rounded-full bg-[linear-gradient(45deg,var(--gradient-from),var(--gradient-to))] blur-[15px] opacity-0 -z-10 transition-all duration-500 group-hover:opacity-50 pointer-events-none"></span>
+						<span className="relative z-10 transition-all duration-500 group-hover:scale-0 pointer-events-none">
 							<span className="text-2xl text-gray-200">{icon}</span>
 						</span>
 						<span className="absolute text-white uppercase tracking-wide text-sm transition-all duration-500 scale-0 group-hover:scale-100">
