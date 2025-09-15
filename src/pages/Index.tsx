@@ -98,7 +98,7 @@ export default function Index() {
               </p>
             </div>
             <div className="pt-2">
-              <a href="#">
+              <a href="https://virtual-lab-navy.vercel.app/">
                 <Button className="w-full" variant="solid">Launch Lab</Button>
               </a>
             </div>
@@ -120,7 +120,7 @@ export default function Index() {
               </p>
             </div>
             <div className="pt-2">
-              <a href="#">
+              <a href="https://carrier-guidaince.vercel.app/">
                 <Button className="w-full" variant="ghost">Explore Paths</Button>
               </a>
             </div>
