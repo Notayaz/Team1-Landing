@@ -71,7 +71,7 @@ export default function Index() {
               </p>
             </div>
             <div className="pt-2">
-              <a href="#">
+              <a href="https://code-translator-bay.vercel.app/">
                 <Button className="w-full" variant="default">Try Translator</Button>
               </a>
             </div>
