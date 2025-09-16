@@ -3,7 +3,7 @@ import { IoHomeOutline, IoCodeSlashOutline, IoFlaskOutline, IoBriefcaseOutline }
 
 const menuItems = [
 	{ title: "Home", icon: <IoHomeOutline />, gradientFrom: "#a955ff", gradientTo: "#ea51ff", href: "/" },
-	{ title: "Code Translator", icon: <IoCodeSlashOutline />, gradientFrom: "#56CCF2", gradientTo: "#2F80ED", href: "#" },
+	{ title: "Code Translator", icon: <IoCodeSlashOutline />, gradientFrom: "#56CCF2", gradientTo: "#2F80ED", href: "https://code-translator-bay.vercel.app/" },
 	{ title: "Virtual Lab", icon: <IoFlaskOutline />, gradientFrom: "#FF9966", gradientTo: "#FF5E62", href: "https://virtual-lab-navy.vercel.app/" },
 	{ title: "Career Guidance", icon: <IoBriefcaseOutline />, gradientFrom: "#80FF72", gradientTo: "#7EE8FA", href: "https://carrier-guidaince.vercel.app/" },
 ];
